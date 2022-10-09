@@ -1,5 +1,7 @@
 import ProjectList from "./components/ProjectList";
-import pictureMichael from './images/picture-michael.png'
+import AboutMe from "./components/AboutMe";
+import Skills from "./components/Skills"
+import pictureMichael from './images/picture-michael.png';
 
 
 function App() {
@@ -8,13 +10,13 @@ function App() {
   <div className="container">
     <div className="header">
       <div className="speech-bubble">
-        <h1>Hi, I'm Michael nice to meet you</h1>
-        <h2>This is my Portfolio App</h2>
+        <h1>Hi, I'm Michael nice to meet you!</h1>
+        <h2>Thank you for visiting my portfolio website</h2>
       </div>
       <img className='image-michael' src={pictureMichael} alt="Picture of myself" />
     </div>
-    
-    <h3>Projects:</h3>
+    <AboutMe/>
+    <Skills/>
     <ProjectList></ProjectList>
   </div>
   </>

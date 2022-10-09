@@ -55,8 +55,8 @@ h2 {
 }
 
 .container {
-    width: 70%;
-    margin-left: 15%;
+    width: 80%;
+    margin-left: 10%;
     padding: 2rem 2rem 4rem 2rem;
     border-radius: 2rem;
 }
@@ -90,6 +90,33 @@ h2 {
 .image-michael {
   height: 20rem;
   margin-bottom: 3rem;
+}
+h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.contact-me {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills-icon {
+  height: 8rem;
+  width: 8rem;
+  margin: 2rem;
+}
+.skills-icon:hover {
+  transform: scale(1.1);
+  transition: 300ms ease-in-out;
 }
 .project-list {
   display: grid;

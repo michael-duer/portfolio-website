@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 :root {
   --text-font: Roboto;
   --backup-font: sans-serif;
+  --project-title: "Carter One";
+  --project-title-backup: "Patua One";
 }
 
 * {
@@ -128,27 +131,44 @@ h3 {
   margin-top: 2rem;
 }
 
-p.project {
+.project {
+ background-color: #4066E0;
+ border: 2px solid #22277A;
+ border-radius: 1rem;
+ padding: 0 1rem 0 1rem;
+}
+
+.project > p, .project-list > p {
   margin-bottom: 1rem;
 }
 
 .title {
+  color: #ffffff;
+  text-shadow: 0 0 5px #000;
+  font-family: var(--project-title), var(--project-title-backup);
   font-size: 1.5rem;
   font-weight: bold;
+  margin: 1rem 0 2rem 0;
+  text-align: center;
 }
 
-.project.languages {
+.languages {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 0rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
-.language {
-  background-color: rebeccapurple;
+.button {
+  background-color: #663399;
   color: white;
   margin-right: 1rem;
   padding: 0.3rem 0.5rem;
   border-radius: 2rem;
   margin-bottom: 1rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.button.filter {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
 }

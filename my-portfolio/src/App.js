@@ -1,4 +1,4 @@
-import ProjectList from "./components/ProjectList";
+import Projects from "./components/Projects";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills"
 import pictureMichael from './images/picture-michael.png';
@@ -17,7 +17,7 @@ function App() {
     </div>
     <AboutMe/>
     <Skills/>
-    <ProjectList></ProjectList>
+    <Projects></Projects>
   </div>
   </>
   );

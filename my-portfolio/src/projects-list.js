@@ -1,7 +1,7 @@
-export const projects = [
+export const projectsList = [
   {
     name: "cannabis-tincture-calculator",
-    description: "shiny website to calculate cannabis tincture",
+    description: "shiny website to calculate cannabis tinctures ratio",
     languages: [
         "R",
         "Shiny"
@@ -48,7 +48,7 @@ export const projects = [
     image: "Bild"
   },
   {
-    name: "open-data-project",
+    name: "open data visualization",
     description: "data visualization of Bernmobil passenger data from 2019 and 2020 in comparison",
     languages: [
         "D3.js",
@@ -66,8 +66,8 @@ export const projects = [
     image: "Bild"
   },
   {
-    name: "website for 'naturheilpraxis Rita Dür'",
-    description: "client website for a naturopath located in Burgdorf",
+    name: 'website for "naturheilpraxis Rita Dür"',
+    description: "website for a naturopath located in Burgdorf",
     languages: [
         "HTML",
         "CSS",

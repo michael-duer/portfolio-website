@@ -3,8 +3,8 @@ export const projectsList = [
     name: "cannabis-tincture-calculator",
     description: "shiny website to calculate cannabis tinctures ratio",
     languages: [
-        "R",
-        "Shiny"
+      "R",
+      "Shiny"
     ],
     concepts: "shiny website",
     commits: 2,
@@ -18,10 +18,8 @@ export const projectsList = [
     name: "pokemon-app",
     description: "display information about each pokemon with data from the pokeapi",
     languages: [
-        "React",
-        "HTML",
-        "Javascript",
-        "CSS"          
+      "React",
+      "HTML / CSS / Javascript"         
     ],
     concepts: "request and display data from API",
     commits: 8,
@@ -35,9 +33,7 @@ export const projectsList = [
     name: "sudoku",
     description: "website to play sudoku",
     languages: [
-        "HTML",
-        "CSS",
-        "Javascript"
+      "HTML / CSS / Javascript"
     ],
     concepts: "game, different design themes",
     commits: 7,
@@ -51,11 +47,9 @@ export const projectsList = [
     name: "open data visualization",
     description: "data visualization of Bernmobil passenger data from 2019 and 2020 in comparison",
     languages: [
-        "D3.js",
-        "Javascript",
-        "HTML",
-        "CSS",
-        "python"       
+      "D3.js",
+      "HTML / CSS / Javascript",
+      "python"       
     ],
     concepts: "data visualization with D3.js",
     commits: 33,
@@ -69,9 +63,7 @@ export const projectsList = [
     name: 'website for "naturheilpraxis Rita Dür"',
     description: "website for a naturopath located in Burgdorf",
     languages: [
-        "HTML",
-        "CSS",
-        "Javascript"
+      "HTML / CSS / Javascript"
     ],
     concepts: "website for a client",
     commits: 100,
@@ -85,10 +77,8 @@ export const projectsList = [
     name: "money-dashboard",
     description: "data visualization of money spending",
     languages: [
-        "D3.js",
-        "Javascript",
-        "HTML",
-        "CSS"  
+      "D3.js",
+      "HTML / CSS / Javascript"
     ],
     concepts: "data visualization with D3.js",
     commits: 6,

@@ -1,7 +1,7 @@
 import React from "react";
  
 const Card = ({ item }) => {            
-           // destructuring props
+           
   return (
     <>
         <div className='project-container' >
@@ -13,11 +13,31 @@ const Card = ({ item }) => {
                     <a className='linkGithub' href={Project.linkGithub}>Link to Code on Github</a>
                     <p className='languages'>
                         { Project.languages.map((language, index) => {
-                            //add "/" after each element except for the last one (index=false)
+                            // create array of individual languages 
+                            // to deal with the string "HTML / CSS / Javascript"
+                            var singleLanguages = []
+                            
+                            // split string into individual languages
+                            if(language === "HTML / CSS / Javascript") {
+                                // split string at " / " using regex
+                                language.split(/( \/ )/).map(element => {
+                                        // ignore "/" elements and push rest into array
+                                        if(element !== " / "){
+                                            singleLanguages.push(element)  
+                                        }       
+                                })                  
+                            } else {
+                                singleLanguages.push(language)       
+                            }
+                
                             return (
-                                <span className='button language' key={index}>
-                                    { language } 
-                                </span>
+                                singleLanguages.map((element, index) => {
+                                    return (
+                                        <span className='button language' key={index}>
+                                            { element }
+                                        </span>
+                                    )
+                                })
                             )
                         })}
                     </p>

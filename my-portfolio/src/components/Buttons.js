@@ -1,5 +1,4 @@
 import React from "react";
-import { projectsList } from "../projects-list" //json data
  
 const Buttons = ({ filterItem, showAll, setItem, menuItems }) => {
   return (

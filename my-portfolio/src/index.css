@@ -26,7 +26,7 @@ html {
 body {
   font-family: sans-serif;
   margin: 3rem;
-  background-color: #eee;/*#dfdfdf; */
+  background-color: #1A1B28; /*#eee; #dfdfdf; */
 }
 
 h1,
@@ -55,6 +55,124 @@ h2 {
     height: 100vh;
     top: 0;
     left: 0;
+}
+
+#navbar-container {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+#navbar {
+  /*margin-left: clamp(4rem, 20vw, 48rem); */
+  position: relative;
+  z-index: 2;
+}
+
+#navbar-container[data-active-index="0"] > #navbar-background-pattern {
+  background-position: 0% -25%;
+}
+
+#navbar-container[data-active-index="1"] > #navbar-background-pattern {
+  background-position: 0% -50%;
+}
+
+#navbar-container[data-active-index="2"] > #navbar-background-pattern {
+  background-position: 0% -75%;
+}
+
+#navbar-container[data-active-index="3"] > #navbar-background-pattern {
+  background-position: 0% -100%;
+}
+
+#navbar-container[data-active-index="0"] > #navbar-background-image {
+  background-position: 80% 45%;
+}
+
+#navbar-container[data-active-index="1"] > #navbar-background-image {
+  background-position: 80% 50%;
+}
+
+#navbar-container[data-active-index="2"] > #navbar-background-image {
+  background-position: 80% 55%;
+}
+
+#navbar-container[data-active-index="3"] > #navbar-background-image {
+  background-position: 80% 60%;
+}
+
+#navbar-background-pattern {
+  height: 100vh;
+  width: 100vw;
+
+  background-image: radial-gradient(
+    rgba(2255, 255, 255, 0.1) 9%,
+    transparent 9%
+  );
+  background-position: 0% 0%;
+  background-size: 12vmin 12vmin;
+
+  position: absolute;
+  z-index: 0;
+  left: 0px;
+  top: 0px;
+
+  transition: opacity 800ms ease,
+    background-size 800ms ease,
+    background-position 800ms ease;
+}
+
+#navbar-background-image {
+  background-image: url('./images/picture-michael.png');
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+
+  background-position: 80% 40%;
+  background-size: 30vmax;
+  background-repeat: no-repeat;
+  opacity: 1;
+
+  transition: opacity 800ms ease,
+    background-size 800ms ease,
+    background-position 800ms ease;
+}
+
+#navbar:hover ~ #navbar-background-pattern {
+  background-size: 11vmin 11vmin;
+  opacity: 0.5;
+}
+
+#navbar:hover ~ #navbar-background-image {
+  background-size: 20vmax;
+  opacity: 0.8;
+}
+
+#navbar:hover > .navbar-item {
+  opacity: 0.3;
+}
+
+#navbar > .navbar-item:hover {
+  opacity: 1;
+}
+/*TODO
+- change font size
+- change link color
+- change font family
+  */
+.navbar-item {
+  color: #fff;
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-family: var(--project-title-backup), var(--backup-font);
+
+  display: block;
+  text-decoration: none;
+  padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+  transition: opacity 400ms ease;
 }
 
 .container {
@@ -159,7 +277,7 @@ h3 {
   margin-top: 2rem;
 }
 .button {
-  background-color: #663399;
+  background-color: #6842FF; /* #663399; */
   color: white;
   margin-right: 1rem;
   padding: 0.3rem 0.5rem;

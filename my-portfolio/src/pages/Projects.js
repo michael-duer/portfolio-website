@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { projectsList } from "../projects-list" //json data
-import Buttons from './Buttons';
-import Card from './Card';
+import { projectsList } from "../data/projectsList" //json data
+import Buttons from '../components/Buttons';
+import Card from '../components/Card';
 
 
 function Projects() {

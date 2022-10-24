@@ -1,3 +1,4 @@
+import React from "react";
 import css from '../images/css-icon.png';
 import javascript from '../images/javascript-icon.png';
 import html from '../images/html-icon.png';
@@ -6,15 +7,15 @@ import shiny from '../images/shiny-icon.png';
 import python from '../images/python-icon.png';
 import java from '../images/java-icon.png';
 import reactIcon from '../images/react-icon.svg';
-import SkillsGraph from './SkillsGraph';
+import SkillsDiagram from '../components/SkillsDiagram';
 
 
 function Skills() {
 
     return (
     <>
-        <h3>Skills:</h3>
-        <SkillsGraph/>
+        <h3>My skills and their applications visualised as Sankey Diagram or List:</h3>
+        <SkillsDiagram/>
         <div className="skills-list">
             <div className='skill'>
                 <img className='skills-icon' src={javascript} alt="Javascript"/>

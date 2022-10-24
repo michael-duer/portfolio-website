@@ -14,17 +14,17 @@ const Card = ({ item }) => {
                     <p className='languages'>
                         { Project.languages.map((language, index) => {
                             // create array of individual languages 
-                            // to deal with the string "HTML / CSS / Javascript"
+                            // to deal with the string: "HTML / CSS / Javascript"
                             var singleLanguages = []
                             
                             // split string into individual languages
                             if(language === "HTML / CSS / Javascript") {
                                 // split string at " / " using regex
                                 language.split(/( \/ )/).map(element => {
-                                        // ignore "/" elements and push rest into array
-                                        if(element !== " / "){
-                                            singleLanguages.push(element)  
-                                        }       
+                                        // ignore elements containing a backslash 
+                                        if(element !== " / "){ return null; }  
+                                        // push all other elements into array     
+                                        return singleLanguages.push(element);
                                 })                  
                             } else {
                                 singleLanguages.push(language)       

@@ -1,6 +1,10 @@
-import React from "react";
  
-const Buttons = ({ filterItem, showAll, setItem, menuItems }) => {
+function Buttons ({ 
+  filterItem, 
+  showAll, 
+  setItem, 
+  menuItems 
+}) {
   return (
     <>
       <div className="button-container">

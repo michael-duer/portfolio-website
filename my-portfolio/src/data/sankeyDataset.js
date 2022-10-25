@@ -11,7 +11,7 @@ export default {
     { name: "Python"},
     { name: "Java"},
     { name: "Web Development"},
-    { name: "Data Analysis/Visualisation"},
+    { name: "Data Analysis / Visualization"},
     { name: "General Purpose"},
     { name: "My Skillset"}
   ],

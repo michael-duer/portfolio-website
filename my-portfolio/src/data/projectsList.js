@@ -49,7 +49,7 @@ export const projectsList = [
     languages: [
       "D3.js",
       "HTML / CSS / Javascript",
-      "python"       
+      "Python"       
     ],
     concepts: "data visualization with D3.js",
     commits: 33,

@@ -16,9 +16,9 @@ function Projects() {
         
         projectsList[i].languages.map(language => {
             // skip if already in array
-            if(usedTechnologies.includes(language)) { return }
+            if(usedTechnologies.includes(language)) { return null }
             //add to array
-            usedTechnologies.push(language)
+            return usedTechnologies.push(language);
         });
     }
     
@@ -40,8 +40,8 @@ function Projects() {
     }
     return (
     <> 
+        <h1 className="page-title">Projects:</h1>
         <div className="project-list">
-            <h3>Projects:</h3>
             <p>{ filterName } projects</p>
             <Buttons
                 filterItem={filterItem}

@@ -45,7 +45,7 @@ export default function Sankey({
   //console.log('sankeyData', sankeyData);
 
   // throws error: "Invalid prop `children` supplied to `Group`, expected a ReactNode"
-  if (children) { // if any problem occurs use original solution (!!children) 
+  if (!!children) { // double !! sets result to be boolean value
     return (
       <Group top={top} left={left} className={cx('vx-sankey', className)}>
         {children({ data: sankeyData })}

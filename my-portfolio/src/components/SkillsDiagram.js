@@ -11,7 +11,7 @@ const calculatedHeight = calculatedWidth/aspectRatio;
 function SkillsDiagram () {
   return (
     <div>
-      <h2>Skills flow diagram</h2>
+      <h2>Skills displayed in a Sankey diagram</h2>
       <SankeyDiagram data={sankeyDataset} width={calculatedWidth} height={calculatedHeight} />
     </div>
   )

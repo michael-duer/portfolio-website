@@ -26,7 +26,7 @@ html {
 body {
   font-family: sans-serif;
   margin: 3rem;
-  background-color: #1A1B28; /*#eee; #dfdfdf; */
+  background-color: #eee; /*#1A1B28; #dfdfdf; */
 }
 
 h1,
@@ -289,4 +289,10 @@ h3 {
 .button.filter {
   font-size: 1rem;
   padding: 0.5rem 1rem;
+}
+
+.switch-button-container {
+  height: 2.5rem;
+  width: 20rem;
+  margin-left: calc(50% - 10rem);
 }

@@ -22,7 +22,7 @@ const Card = ({ item }) => {
                                 // split string at " / " using regex
                                 language.split(/( \/ )/).map(element => {
                                         // ignore elements containing a backslash 
-                                        if(element !== " / "){ return null; }  
+                                        if(element === " / "){ return null; }  
                                         // push all other elements into array     
                                         return singleLanguages.push(element);
                                 })                  
